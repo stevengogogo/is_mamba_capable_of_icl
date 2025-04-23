@@ -1,4 +1,4 @@
-name: in-context-learning
+name: in-context-learning-mamba
 channels:
   - pytorch
   - nvidia/label/cuda-12.1.0

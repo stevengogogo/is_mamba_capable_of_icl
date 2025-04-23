@@ -190,12 +190,12 @@ def main(args):
         wandb.init(
             dir=args.out_dir,
             project=args.wandb.project,
-            entity=args.wandb.entity,
+            #entity=args.wandb.entity,
             config=args.__dict__,
             notes=args.wandb.notes,
             name=args.wandb.name,
             resume=True,
-            mode='online'
+            mode='offline'
         )
 
     if torch.cuda.is_available():
